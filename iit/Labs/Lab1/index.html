@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab 1: Protocols</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <style type="text/css">
+        ol.lst-kix_29acvqehvf2t-6 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_29acvqehvf2t-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_29acvqehvf2t-8 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_29acvqehvf2t-2 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_3w26ordmyeir-3.start {
+            counter-reset: lst-ctn-kix_3w26ordmyeir-3 0
+        }
+
+        ol.lst-kix_29acvqehvf2t-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_29acvqehvf2t-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_29acvqehvf2t-5 {
+            list-style-type: none
+        }
+
+        .lst-kix_266b7znt1amz-1>li {
+            counter-increment: lst-ctn-kix_266b7znt1amz-1
+        }
+
+        .lst-kix_8pdmiqve1fg7-8>li {
+            counter-increment: lst-ctn-kix_8pdmiqve1fg7-8
+        }
+
+        ol.lst-kix_29acvqehvf2t-0 {
+            list-style-type: none
+        }
+
+        .lst-kix_4w3azdvewbjj-5>li {
+            counter-increment: lst-ctn-kix_4w3azdvewbjj-5
+        }
+
+        ol.lst-kix_29acvqehvf2t-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_29acvqehvf2t-6.start {
+            counter-reset: lst-ctn-kix_29acvqehvf2t-6 0
+        }
+
+        ol.lst-kix_cwynwjidfuk-1.start {
+            counter-reset: lst-ctn-kix_cwynwjidfuk-1 0
+        }
+
+        ol.lst-kix_29acvqehvf2t-0.start {
+            counter-reset: lst-ctn-kix_29acvqehvf2t-0 0
+        }
+
+        ol.lst-kix_266b7znt1amz-4.start {
+            counter-reset: lst-ctn-kix_266b7znt1amz-4 0
+        }
+
+        .lst-kix_cwynwjidfuk-7>li {
+            counter-increment: lst-ctn-kix_cwynwjidfuk-7
+        }
+
+        .lst-kix_3w26ordmyeir-2>li {
+            counter-increment: lst-ctn-kix_3w26ordmyeir-2
+        }
+
+        ol.lst-kix_8pdmiqve1fg7-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_8pdmiqve1fg7-2 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_8pdmiqve1fg7-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_8pdmiqve1fg7-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_8pdmiqve1fg7-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_8pdmiqve1fg7-6 {
+            list-style-type: none
+        }
+
+        .lst-kix_8pdmiqve1fg7-6>li {
+            counter-increment: lst-ctn-kix_8pdmiqve1fg7-6
+        }
+
+        ol.lst-kix_8pdmiqve1fg7-8 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_8pdmiqve1fg7-4.start {
+            counter-reset: lst-ctn-kix_8pdmiqve1fg7-4 0
+        }
+
+        ol.lst-kix_4w3azdvewbjj-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_8pdmiqve1fg7-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_4w3azdvewbjj-0 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_8pdmiqve1fg7-0 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_4w3azdvewbjj-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_4w3azdvewbjj-2 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_4w3azdvewbjj-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_4w3azdvewbjj-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_4w3azdvewbjj-7 {
+            list-style-type: none
+        }
+
+        .lst-kix_29acvqehvf2t-0>li {
+            counter-increment: lst-ctn-kix_29acvqehvf2t-0
+        }
+
+        ol.lst-kix_4w3azdvewbjj-6 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_4w3azdvewbjj-8 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_29acvqehvf2t-1.start {
+            counter-reset: lst-ctn-kix_29acvqehvf2t-1 0
+        }
+
+        .lst-kix_3w26ordmyeir-6>li:before {
+            content: ""counter(lst-ctn-kix_3w26ordmyeir-6, decimal) ". "
+        }
+
+        .lst-kix_3w26ordmyeir-5>li:before {
+            content: ""counter(lst-ctn-kix_3w26ordmyeir-5, lower-roman) ". "
+        }
+
+        .lst-kix_3w26ordmyeir-3>li:before {
+            content: ""counter(lst-ctn-kix_3w26ordmyeir-3, decimal) ". "
+        }
+
+        .lst-kix_3w26ordmyeir-4>li:before {
+            content: ""counter(lst-ctn-kix_3w26ordmyeir-4, lower-latin) ". "
+        }
+
+        .lst-kix_3w26ordmyeir-1>li:before {
+            content: ""counter(lst-ctn-kix_3w26ordmyeir-1, lower-latin) ". "
+        }
+
+        .lst-kix_3w26ordmyeir-2>li:before {
+            content: ""counter(lst-ctn-kix_3w26ordmyeir-2, lower-roman) ". "
+        }
+
+        .lst-kix_29acvqehvf2t-1>li:before {
+            content: ""counter(lst-ctn-kix_29acvqehvf2t-1, lower-latin) ". "
+        }
+
+        .lst-kix_29acvqehvf2t-3>li:before {
+            content: ""counter(lst-ctn-kix_29acvqehvf2t-3, decimal) ". "
+        }
+
+        .lst-kix_3w26ordmyeir-0>li:before {
+            content: ""counter(lst-ctn-kix_3w26ordmyeir-0, decimal) ". "
+        }
+
+        .lst-kix_4w3azdvewbjj-7>li {
+            counter-increment: lst-ctn-kix_4w3azdvewbjj-7
+        }
+
+        .lst-kix_29acvqehvf2t-2>li:before {
+            content: ""counter(lst-ctn-kix_29acvqehvf2t-2, lower-roman) ". "
+        }
+
+        .lst-kix_cwynwjidfuk-5>li {
+            counter-increment: lst-ctn-kix_cwynwjidfuk-5
+        }
+
+        .lst-kix_29acvqehvf2t-7>li:before {
+            content: ""counter(lst-ctn-kix_29acvqehvf2t-7, lower-latin) ". "
+        }
+
+        .lst-kix_29acvqehvf2t-0>li:before {
+            content: ""counter(lst-ctn-kix_29acvqehvf2t-0, decimal) ". "
+        }
+
+        .lst-kix_29acvqehvf2t-8>li:before {
+            content: ""counter(lst-ctn-kix_29acvqehvf2t-8, lower-roman) ". "
+        }
+
+        .lst-kix_3w26ordmyeir-4>li {
+            counter-increment: lst-ctn-kix_3w26ordmyeir-4
+        }
+
+        ol.lst-kix_8pdmiqve1fg7-3.start {
+            counter-reset: lst-ctn-kix_8pdmiqve1fg7-3 0
+        }
+
+        .lst-kix_29acvqehvf2t-6>li:before {
+            content: ""counter(lst-ctn-kix_29acvqehvf2t-6, decimal) ". "
+        }
+
+        .lst-kix_29acvqehvf2t-4>li {
+            counter-increment: lst-ctn-kix_29acvqehvf2t-4
+        }
+
+        .lst-kix_29acvqehvf2t-5>li:before {
+            content: ""counter(lst-ctn-kix_29acvqehvf2t-5, lower-roman) ". "
+        }
+
+        .lst-kix_4w3azdvewbjj-1>li {
+            counter-increment: lst-ctn-kix_4w3azdvewbjj-1
+        }
+
+        .lst-kix_29acvqehvf2t-4>li:before {
+            content: ""counter(lst-ctn-kix_29acvqehvf2t-4, lower-latin) ". "
+        }
+
+        .lst-kix_29acvqehvf2t-7>li {
+            counter-increment: lst-ctn-kix_29acvqehvf2t-7
+        }
+
+        ul.lst-kix_8avn1jguzp8n-5 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_8avn1jguzp8n-6 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_8avn1jguzp8n-7 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_8avn1jguzp8n-8 {
+            list-style-type: none
+        }
+
+        .lst-kix_8pdmiqve1fg7-2>li {
+            counter-increment: lst-ctn-kix_8pdmiqve1fg7-2
+        }
+
+        .lst-kix_29acvqehvf2t-5>li {
+            counter-increment: lst-ctn-kix_29acvqehvf2t-5
+        }
+
+        ol.lst-kix_266b7znt1amz-0.start {
+            counter-reset: lst-ctn-kix_266b7znt1amz-0 0
+        }
+
+        ul.lst-kix_8avn1jguzp8n-1 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_8avn1jguzp8n-2 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_8avn1jguzp8n-3 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_8avn1jguzp8n-4 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_8avn1jguzp8n-0 {
+            list-style-type: none
+        }
+
+        .lst-kix_8avn1jguzp8n-3>li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_8avn1jguzp8n-1>li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_8avn1jguzp8n-5>li:before {
+            content: "\0025a0  "
+        }
+
+        ol.lst-kix_cwynwjidfuk-8.start {
+            counter-reset: lst-ctn-kix_cwynwjidfuk-8 0
+        }
+
+        ol.lst-kix_8pdmiqve1fg7-2.start {
+            counter-reset: lst-ctn-kix_8pdmiqve1fg7-2 0
+        }
+
+        ol.lst-kix_cwynwjidfuk-5.start {
+            counter-reset: lst-ctn-kix_cwynwjidfuk-5 0
+        }
+
+        .lst-kix_3w26ordmyeir-8>li {
+            counter-increment: lst-ctn-kix_3w26ordmyeir-8
+        }
+
+        .lst-kix_8avn1jguzp8n-7>li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_29acvqehvf2t-6>li {
+            counter-increment: lst-ctn-kix_29acvqehvf2t-6
+        }
+
+        ol.lst-kix_3w26ordmyeir-4.start {
+            counter-reset: lst-ctn-kix_3w26ordmyeir-4 0
+        }
+
+        .lst-kix_8pdmiqve1fg7-0>li {
+            counter-increment: lst-ctn-kix_8pdmiqve1fg7-0
+        }
+
+        ol.lst-kix_4w3azdvewbjj-0.start {
+            counter-reset: lst-ctn-kix_4w3azdvewbjj-0 0
+        }
+
+        .lst-kix_3w26ordmyeir-7>li:before {
+            content: ""counter(lst-ctn-kix_3w26ordmyeir-7, lower-latin) ". "
+        }
+
+        .lst-kix_266b7znt1amz-8>li {
+            counter-increment: lst-ctn-kix_266b7znt1amz-8
+        }
+
+        ol.lst-kix_8pdmiqve1fg7-0.start {
+            counter-reset: lst-ctn-kix_8pdmiqve1fg7-0 0
+        }
+
+        .lst-kix_8pdmiqve1fg7-6>li:before {
+            content: ""counter(lst-ctn-kix_8pdmiqve1fg7-6, decimal) ". "
+        }
+
+        .lst-kix_cwynwjidfuk-3>li {
+            counter-increment: lst-ctn-kix_cwynwjidfuk-3
+        }
+
+        ol.lst-kix_cwynwjidfuk-6.start {
+            counter-reset: lst-ctn-kix_cwynwjidfuk-6 0
+        }
+
+        .lst-kix_4w3azdvewbjj-3>li {
+            counter-increment: lst-ctn-kix_4w3azdvewbjj-3
+        }
+
+        .lst-kix_8pdmiqve1fg7-2>li:before {
+            content: ""counter(lst-ctn-kix_8pdmiqve1fg7-2, lower-roman) ". "
+        }
+
+        ol.lst-kix_266b7znt1amz-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_266b7znt1amz-2 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_266b7znt1amz-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_266b7znt1amz-4 {
+            list-style-type: none
+        }
+
+        .lst-kix_8pdmiqve1fg7-0>li:before {
+            content: ""counter(lst-ctn-kix_8pdmiqve1fg7-0, decimal) ". "
+        }
+
+        .lst-kix_8pdmiqve1fg7-8>li:before {
+            content: ""counter(lst-ctn-kix_8pdmiqve1fg7-8, lower-roman) ". "
+        }
+
+        ol.lst-kix_266b7znt1amz-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_266b7znt1amz-6 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_266b7znt1amz-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_266b7znt1amz-8 {
+            list-style-type: none
+        }
+
+        .lst-kix_4w3azdvewbjj-2>li {
+            counter-increment: lst-ctn-kix_4w3azdvewbjj-2
+        }
+
+        ol.lst-kix_3w26ordmyeir-1.start {
+            counter-reset: lst-ctn-kix_3w26ordmyeir-1 0
+        }
+
+        ol.lst-kix_266b7znt1amz-0 {
+            list-style-type: none
+        }
+
+        .lst-kix_266b7znt1amz-3>li {
+            counter-increment: lst-ctn-kix_266b7znt1amz-3
+        }
+
+        .lst-kix_8pdmiqve1fg7-4>li:before {
+            content: ""counter(lst-ctn-kix_8pdmiqve1fg7-4, lower-latin) ". "
+        }
+
+        .lst-kix_cwynwjidfuk-4>li {
+            counter-increment: lst-ctn-kix_cwynwjidfuk-4
+        }
+
+        .lst-kix_8pdmiqve1fg7-7>li {
+            counter-increment: lst-ctn-kix_8pdmiqve1fg7-7
+        }
+
+        ol.lst-kix_3w26ordmyeir-2.start {
+            counter-reset: lst-ctn-kix_3w26ordmyeir-2 0
+        }
+
+        .lst-kix_8pdmiqve1fg7-1>li {
+            counter-increment: lst-ctn-kix_8pdmiqve1fg7-1
+        }
+
+        ol.lst-kix_cwynwjidfuk-7.start {
+            counter-reset: lst-ctn-kix_cwynwjidfuk-7 0
+        }
+
+        .lst-kix_4w3azdvewbjj-8>li:before {
+            content: ""counter(lst-ctn-kix_4w3azdvewbjj-8, lower-roman) ". "
+        }
+
+        .lst-kix_4w3azdvewbjj-7>li:before {
+            content: ""counter(lst-ctn-kix_4w3azdvewbjj-7, lower-latin) ". "
+        }
+
+        .lst-kix_cwynwjidfuk-6>li {
+            counter-increment: lst-ctn-kix_cwynwjidfuk-6
+        }
+
+        ol.lst-kix_cwynwjidfuk-4.start {
+            counter-reset: lst-ctn-kix_cwynwjidfuk-4 0
+        }
+
+        .lst-kix_4w3azdvewbjj-4>li:before {
+            content: ""counter(lst-ctn-kix_4w3azdvewbjj-4, lower-latin) ". "
+        }
+
+        .lst-kix_4w3azdvewbjj-5>li:before {
+            content: ""counter(lst-ctn-kix_4w3azdvewbjj-5, lower-roman) ". "
+        }
+
+        .lst-kix_3w26ordmyeir-3>li {
+            counter-increment: lst-ctn-kix_3w26ordmyeir-3
+        }
+
+        ol.lst-kix_3w26ordmyeir-0.start {
+            counter-reset: lst-ctn-kix_3w26ordmyeir-0 0
+        }
+
+        .lst-kix_4w3azdvewbjj-6>li:before {
+            content: ""counter(lst-ctn-kix_4w3azdvewbjj-6, decimal) ". "
+        }
+
+        ol.lst-kix_29acvqehvf2t-3.start {
+            counter-reset: lst-ctn-kix_29acvqehvf2t-3 0
+        }
+
+        .lst-kix_266b7znt1amz-0>li {
+            counter-increment: lst-ctn-kix_266b7znt1amz-0
+        }
+
+        ol.lst-kix_266b7znt1amz-7.start {
+            counter-reset: lst-ctn-kix_266b7znt1amz-7 0
+        }
+
+        .lst-kix_4w3azdvewbjj-6>li {
+            counter-increment: lst-ctn-kix_4w3azdvewbjj-6
+        }
+
+        ol.lst-kix_3w26ordmyeir-6.start {
+            counter-reset: lst-ctn-kix_3w26ordmyeir-6 0
+        }
+
+        .lst-kix_266b7znt1amz-2>li {
+            counter-increment: lst-ctn-kix_266b7znt1amz-2
+        }
+
+        .lst-kix_4w3azdvewbjj-1>li:before {
+            content: ""counter(lst-ctn-kix_4w3azdvewbjj-1, lower-latin) ". "
+        }
+
+        .lst-kix_4w3azdvewbjj-8>li {
+            counter-increment: lst-ctn-kix_4w3azdvewbjj-8
+        }
+
+        .lst-kix_4w3azdvewbjj-3>li:before {
+            content: ""counter(lst-ctn-kix_4w3azdvewbjj-3, decimal) ". "
+        }
+
+        .lst-kix_4w3azdvewbjj-0>li:before {
+            content: ""counter(lst-ctn-kix_4w3azdvewbjj-0, decimal) ". "
+        }
+
+        ol.lst-kix_4w3azdvewbjj-7.start {
+            counter-reset: lst-ctn-kix_4w3azdvewbjj-7 0
+        }
+
+        ol.lst-kix_8pdmiqve1fg7-1.start {
+            counter-reset: lst-ctn-kix_8pdmiqve1fg7-1 0
+        }
+
+        .lst-kix_4w3azdvewbjj-2>li:before {
+            content: ""counter(lst-ctn-kix_4w3azdvewbjj-2, lower-roman) ". "
+        }
+
+        .lst-kix_266b7znt1amz-1>li:before {
+            content: ""counter(lst-ctn-kix_266b7znt1amz-1, lower-latin) ". "
+        }
+
+        .lst-kix_cwynwjidfuk-2>li:before {
+            content: ""counter(lst-ctn-kix_cwynwjidfuk-2, lower-roman) ". "
+        }
+
+        .lst-kix_cwynwjidfuk-3>li:before {
+            content: ""counter(lst-ctn-kix_cwynwjidfuk-3, decimal) ". "
+        }
+
+        .lst-kix_266b7znt1amz-0>li:before {
+            content: ""counter(lst-ctn-kix_266b7znt1amz-0, decimal) ". "
+        }
+
+        .lst-kix_266b7znt1amz-2>li:before {
+            content: ""counter(lst-ctn-kix_266b7znt1amz-2, lower-roman) ". "
+        }
+
+        .lst-kix_266b7znt1amz-3>li:before {
+            content: ""counter(lst-ctn-kix_266b7znt1amz-3, decimal) ". "
+        }
+
+        .lst-kix_cwynwjidfuk-0>li:before {
+            content: ""counter(lst-ctn-kix_cwynwjidfuk-0, decimal) ". "
+        }
+
+        .lst-kix_cwynwjidfuk-4>li:before {
+            content: ""counter(lst-ctn-kix_cwynwjidfuk-4, lower-latin) ". "
+        }
+
+        ol.lst-kix_3w26ordmyeir-5.start {
+            counter-reset: lst-ctn-kix_3w26ordmyeir-5 0
+        }
+
+        .lst-kix_cwynwjidfuk-6>li:before {
+            content: ""counter(lst-ctn-kix_cwynwjidfuk-6, decimal) ". "
+        }
+
+        .lst-kix_cwynwjidfuk-7>li:before {
+            content: ""counter(lst-ctn-kix_cwynwjidfuk-7, lower-latin) ". "
+        }
+
+        .lst-kix_8pdmiqve1fg7-5>li {
+            counter-increment: lst-ctn-kix_8pdmiqve1fg7-5
+        }
+
+        .lst-kix_cwynwjidfuk-5>li:before {
+            content: ""counter(lst-ctn-kix_cwynwjidfuk-5, lower-roman) ". "
+        }
+
+        .lst-kix_266b7znt1amz-4>li {
+            counter-increment: lst-ctn-kix_266b7znt1amz-4
+        }
+
+        .lst-kix_266b7znt1amz-8>li:before {
+            content: ""counter(lst-ctn-kix_266b7znt1amz-8, lower-roman) ". "
+        }
+
+        ol.lst-kix_cwynwjidfuk-3.start {
+            counter-reset: lst-ctn-kix_cwynwjidfuk-3 0
+        }
+
+        ol.lst-kix_266b7znt1amz-2.start {
+            counter-reset: lst-ctn-kix_266b7znt1amz-2 0
+        }
+
+        .lst-kix_266b7znt1amz-7>li:before {
+            content: ""counter(lst-ctn-kix_266b7znt1amz-7, lower-latin) ". "
+        }
+
+        ol.lst-kix_4w3azdvewbjj-1.start {
+            counter-reset: lst-ctn-kix_4w3azdvewbjj-1 0
+        }
+
+        .lst-kix_266b7znt1amz-4>li:before {
+            content: ""counter(lst-ctn-kix_266b7znt1amz-4, lower-latin) ". "
+        }
+
+        .lst-kix_266b7znt1amz-6>li:before {
+            content: ""counter(lst-ctn-kix_266b7znt1amz-6, decimal) ". "
+        }
+
+        .lst-kix_cwynwjidfuk-1>li:before {
+            content: ""counter(lst-ctn-kix_cwynwjidfuk-1, lower-latin) ". "
+        }
+
+        ol.lst-kix_29acvqehvf2t-8.start {
+            counter-reset: lst-ctn-kix_29acvqehvf2t-8 0
+        }
+
+        .lst-kix_266b7znt1amz-5>li:before {
+            content: ""counter(lst-ctn-kix_266b7znt1amz-5, lower-roman) ". "
+        }
+
+        ol.lst-kix_29acvqehvf2t-2.start {
+            counter-reset: lst-ctn-kix_29acvqehvf2t-2 0
+        }
+
+        .lst-kix_cwynwjidfuk-2>li {
+            counter-increment: lst-ctn-kix_cwynwjidfuk-2
+        }
+
+        ol.lst-kix_4w3azdvewbjj-8.start {
+            counter-reset: lst-ctn-kix_4w3azdvewbjj-8 0
+        }
+
+        ol.lst-kix_266b7znt1amz-1.start {
+            counter-reset: lst-ctn-kix_266b7znt1amz-1 0
+        }
+
+        .lst-kix_cwynwjidfuk-8>li {
+            counter-increment: lst-ctn-kix_cwynwjidfuk-8
+        }
+
+        .lst-kix_3w26ordmyeir-1>li {
+            counter-increment: lst-ctn-kix_3w26ordmyeir-1
+        }
+
+        .lst-kix_3w26ordmyeir-7>li {
+            counter-increment: lst-ctn-kix_3w26ordmyeir-7
+        }
+
+        .lst-kix_cwynwjidfuk-8>li:before {
+            content: ""counter(lst-ctn-kix_cwynwjidfuk-8, lower-roman) ". "
+        }
+
+        .lst-kix_29acvqehvf2t-1>li {
+            counter-increment: lst-ctn-kix_29acvqehvf2t-1
+        }
+
+        ol.lst-kix_4w3azdvewbjj-2.start {
+            counter-reset: lst-ctn-kix_4w3azdvewbjj-2 0
+        }
+
+        .lst-kix_4w3azdvewbjj-4>li {
+            counter-increment: lst-ctn-kix_4w3azdvewbjj-4
+        }
+
+        ol.lst-kix_266b7znt1amz-8.start {
+            counter-reset: lst-ctn-kix_266b7znt1amz-8 0
+        }
+
+        ol.lst-kix_3w26ordmyeir-8 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_3w26ordmyeir-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_8pdmiqve1fg7-5.start {
+            counter-reset: lst-ctn-kix_8pdmiqve1fg7-5 0
+        }
+
+        ol.lst-kix_3w26ordmyeir-6 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_3w26ordmyeir-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_3w26ordmyeir-4 {
+            list-style-type: none
+        }
+
+        .lst-kix_8avn1jguzp8n-0>li:before {
+            content: "\0025cf  "
+        }
+
+        ol.lst-kix_3w26ordmyeir-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_3w26ordmyeir-2 {
+            list-style-type: none
+        }
+
+        .lst-kix_266b7znt1amz-6>li {
+            counter-increment: lst-ctn-kix_266b7znt1amz-6
+        }
+
+        .lst-kix_cwynwjidfuk-0>li {
+            counter-increment: lst-ctn-kix_cwynwjidfuk-0
+        }
+
+        .lst-kix_4w3azdvewbjj-0>li {
+            counter-increment: lst-ctn-kix_4w3azdvewbjj-0
+        }
+
+        ol.lst-kix_3w26ordmyeir-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_3w26ordmyeir-0 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_4w3azdvewbjj-6.start {
+            counter-reset: lst-ctn-kix_4w3azdvewbjj-6 0
+        }
+
+        .lst-kix_8avn1jguzp8n-2>li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_8avn1jguzp8n-4>li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_cwynwjidfuk-1>li {
+            counter-increment: lst-ctn-kix_cwynwjidfuk-1
+        }
+
+        .lst-kix_266b7znt1amz-7>li {
+            counter-increment: lst-ctn-kix_266b7znt1amz-7
+        }
+
+        ol.lst-kix_4w3azdvewbjj-3.start {
+            counter-reset: lst-ctn-kix_4w3azdvewbjj-3 0
+        }
+
+        ol.lst-kix_266b7znt1amz-6.start {
+            counter-reset: lst-ctn-kix_266b7znt1amz-6 0
+        }
+
+        ol.lst-kix_29acvqehvf2t-7.start {
+            counter-reset: lst-ctn-kix_29acvqehvf2t-7 0
+        }
+
+        ol.lst-kix_8pdmiqve1fg7-8.start {
+            counter-reset: lst-ctn-kix_8pdmiqve1fg7-8 0
+        }
+
+        .lst-kix_8avn1jguzp8n-6>li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_8avn1jguzp8n-8>li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_8pdmiqve1fg7-3>li {
+            counter-increment: lst-ctn-kix_8pdmiqve1fg7-3
+        }
+
+        .lst-kix_29acvqehvf2t-3>li {
+            counter-increment: lst-ctn-kix_29acvqehvf2t-3
+        }
+
+        ol.lst-kix_266b7znt1amz-3.start {
+            counter-reset: lst-ctn-kix_266b7znt1amz-3 0
+        }
+
+        ol.lst-kix_3w26ordmyeir-7.start {
+            counter-reset: lst-ctn-kix_3w26ordmyeir-7 0
+        }
+
+        .lst-kix_3w26ordmyeir-8>li:before {
+            content: ""counter(lst-ctn-kix_3w26ordmyeir-8, lower-roman) ". "
+        }
+
+        .lst-kix_3w26ordmyeir-0>li {
+            counter-increment: lst-ctn-kix_3w26ordmyeir-0
+        }
+
+        ol.lst-kix_29acvqehvf2t-4.start {
+            counter-reset: lst-ctn-kix_29acvqehvf2t-4 0
+        }
+
+        ol.lst-kix_cwynwjidfuk-2.start {
+            counter-reset: lst-ctn-kix_cwynwjidfuk-2 0
+        }
+
+        .lst-kix_266b7znt1amz-5>li {
+            counter-increment: lst-ctn-kix_266b7znt1amz-5
+        }
+
+        .lst-kix_8pdmiqve1fg7-5>li:before {
+            content: ""counter(lst-ctn-kix_8pdmiqve1fg7-5, lower-roman) ". "
+        }
+
+        .lst-kix_8pdmiqve1fg7-7>li:before {
+            content: ""counter(lst-ctn-kix_8pdmiqve1fg7-7, lower-latin) ". "
+        }
+
+        .lst-kix_29acvqehvf2t-8>li {
+            counter-increment: lst-ctn-kix_29acvqehvf2t-8
+        }
+
+        .lst-kix_29acvqehvf2t-2>li {
+            counter-increment: lst-ctn-kix_29acvqehvf2t-2
+        }
+
+        ol.lst-kix_8pdmiqve1fg7-7.start {
+            counter-reset: lst-ctn-kix_8pdmiqve1fg7-7 0
+        }
+
+        .lst-kix_8pdmiqve1fg7-1>li:before {
+            content: ""counter(lst-ctn-kix_8pdmiqve1fg7-1, lower-latin) ". "
+        }
+
+        ol.lst-kix_266b7znt1amz-5.start {
+            counter-reset: lst-ctn-kix_266b7znt1amz-5 0
+        }
+
+        ol.lst-kix_4w3azdvewbjj-4.start {
+            counter-reset: lst-ctn-kix_4w3azdvewbjj-4 0
+        }
+
+        .lst-kix_3w26ordmyeir-6>li {
+            counter-increment: lst-ctn-kix_3w26ordmyeir-6
+        }
+
+        ol.lst-kix_cwynwjidfuk-8 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_3w26ordmyeir-8.start {
+            counter-reset: lst-ctn-kix_3w26ordmyeir-8 0
+        }
+
+        ol.lst-kix_cwynwjidfuk-6 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_cwynwjidfuk-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_29acvqehvf2t-5.start {
+            counter-reset: lst-ctn-kix_29acvqehvf2t-5 0
+        }
+
+        ol.lst-kix_cwynwjidfuk-0 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_cwynwjidfuk-1 {
+            list-style-type: none
+        }
+
+        .lst-kix_3w26ordmyeir-5>li {
+            counter-increment: lst-ctn-kix_3w26ordmyeir-5
+        }
+
+        .lst-kix_8pdmiqve1fg7-3>li:before {
+            content: ""counter(lst-ctn-kix_8pdmiqve1fg7-3, decimal) ". "
+        }
+
+        ol.lst-kix_cwynwjidfuk-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_cwynwjidfuk-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_cwynwjidfuk-2 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_cwynwjidfuk-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_cwynwjidfuk-0.start {
+            counter-reset: lst-ctn-kix_cwynwjidfuk-0 0
+        }
+
+        li.li-bullet-0:before {
+            margin-left: -18pt;
+            white-space: nowrap;
+            display: inline-block;
+            min-width: 18pt
+        }
+
+        ol.lst-kix_4w3azdvewbjj-5.start {
+            counter-reset: lst-ctn-kix_4w3azdvewbjj-5 0
+        }
+
+        .lst-kix_8pdmiqve1fg7-4>li {
+            counter-increment: lst-ctn-kix_8pdmiqve1fg7-4
+        }
+
+        ol.lst-kix_8pdmiqve1fg7-6.start {
+            counter-reset: lst-ctn-kix_8pdmiqve1fg7-6 0
+        }
+
+        ol {
+            margin: 0;
+            padding: 0
+        }
+
+        table td,
+        table th {
+            padding: 0
+        }
+
+        .c3 {
+            margin-left: 36pt;
+            padding-top: 12pt;
+            padding-left: 0pt;
+            padding-bottom: 16pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c2 {
+            margin-left: 108pt;
+            padding-top: 12pt;
+            padding-left: 0pt;
+            padding-bottom: 16pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c6 {
+            margin-left: 72pt;
+            padding-top: 12pt;
+            padding-left: 0pt;
+            padding-bottom: 16pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c30 {
+            margin-left: 36pt;
+            padding-top: 12pt;
+            padding-left: 0pt;
+            padding-bottom: 20pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c11 {
+            -webkit-text-decoration-skip: none;
+            color: #0000ff;
+            font-weight: 400;
+            text-decoration: underline;
+            vertical-align: baseline;
+            text-decoration-skip-ink: none;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c20 {
+            -webkit-text-decoration-skip: none;
+            color: #1155cc;
+            font-weight: 400;
+            text-decoration: underline;
+            vertical-align: baseline;
+            text-decoration-skip-ink: none;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c12 {
+            margin-left: 144pt;
+            padding-top: 12pt;
+            padding-left: 0pt;
+            padding-bottom: 16pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c7 {
+            padding-top: 0pt;
+            padding-bottom: 4pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: left;
+            height: 11pt
+        }
+
+        .c17 {
+            margin-left: 14pt;
+            padding-top: 0pt;
+            padding-bottom: 4pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c9 {
+            margin-left: 27pt;
+            padding-top: 0pt;
+            padding-bottom: 4pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c4 {
+            color: #315385;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 8.5pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c0 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 8.5pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c21 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 11pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c27 {
+            padding-top: 0pt;
+            text-indent: 14pt;
+            padding-bottom: 4pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c18 {
+            padding-top: 0pt;
+            padding-bottom: 8pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c29 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c16 {
+            color: #000000;
+            font-weight: 700;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c23 {
+            color: #3f6caf;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 10pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c31 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-family: "Arial"
+        }
+
+        .c13 {
+            text-decoration-skip-ink: none;
+            -webkit-text-decoration-skip: none;
+            color: #0000ff;
+            text-decoration: underline
+        }
+
+        .c25 {
+            text-decoration-skip-ink: none;
+            -webkit-text-decoration-skip: none;
+            color: #1155cc;
+            text-decoration: underline
+        }
+
+        .c24 {
+            text-decoration: none;
+            vertical-align: baseline;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c28 {
+            background-color: #ffffff;
+            max-width: 468pt;
+            padding: 72pt 72pt 72pt 72pt
+        }
+
+        .c1 {
+            padding: 0;
+            margin: 0
+        }
+
+        .c5 {
+            color: inherit;
+            text-decoration: inherit
+        }
+
+        .c22 {
+            font-style: italic
+        }
+
+        .c10 {
+            font-size: 8.5pt
+        }
+
+        .c26 {
+            margin-left: 14pt
+        }
+
+        .c8 {
+            font-size: 7.5pt
+        }
+
+        .c19 {
+            font-weight: 700
+        }
+
+        .c14 {
+            margin-left: 27pt
+        }
+
+        .c15 {
+            color: #315385
+        }
+
+        .title {
+            padding-top: 0pt;
+            color: #000000;
+            font-size: 26pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .subtitle {
+            padding-top: 0pt;
+            color: #666666;
+            font-size: 15pt;
+            padding-bottom: 16pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        li {
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        h1 {
+            padding-top: 20pt;
+            color: #000000;
+            font-size: 20pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h2 {
+            padding-top: 18pt;
+            color: #000000;
+            font-size: 16pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h3 {
+            padding-top: 16pt;
+            color: #434343;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 14pt;
+            color: #666666;
+            font-size: 12pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+    </style>
+</head>
+
+<body class="c28">
+    <div class="all">
+        <div>
+          <h1 class="mainhead">Anooj Pai Portfolio</h1>
+        </div>
+        <div class="topnav">
+          <a href="/Home/index.html">Home</a>
+          <div class="dropdown">
+            <button class="dropbtnlab">Labs</button>
+            <div class="dropdown-content">
+                <a href="/Labs/Lab1/index.html">Lab 1: Protocols</a>
+                <a href="/Labs/Lab2/index.html">Lab 2: Resume</a>
+                <a href="/Labs/Lab3/index.html">Lab 3: Website</a>
+            </div>
+          </div>
+          <a href="/Final_Project/index.html">Final Project</a>
+          <a href="/Resume/index.html">Resume</a>
+        </div>
+      </div>
+    <p class="c29"><span class="c19 c23">Ifconfig Lab 1: Network &amp; Protocols</span></p>
+    <p class="c18"><span class="c0">Intro IT &amp; Web Science - ITWS 1100</span></p>
+    <p class="c18"><span class="c10">The purpose of this lab is to get you familiar with some basic networking concepts,
+            protocols, and tools. &nbsp;We will start the lab in class. &nbsp;Please enter your answers in this document
+            and save it as &ldquo;Lab1-</span><span class="c10 c22">YourFullName.docx</span><span class="c0">&rdquo;. It
+            is due in the Assignment area by EoD on the next class-day.</span></p>
+    <ol class="c1 lst-kix_3w26ordmyeir-0 start" start="1">
+        <li class="c30 li-bullet-0"><span class="c10 c19">Basic Network Information<br></span><span class="c0">For the
+                following exercises, open a &ldquo;Command Prompt&rdquo; console window on your laptop, enter each
+                command as shown on the command line, and answer the questions provided. &nbsp;To copy from the Command
+                Console, block text with your mouse and right-click or hit enter. &nbsp;(If you cannot block text
+                directly, right-click and select &ldquo;Mark&rdquo; first). &nbsp;If you are using Linux/Unix/OS X,
+                perform the equivalent command (shown in parentheses) in a terminal window.</span></li>
+    </ol>
+    <p class="c18 c26"><span class="c10 c19">Hint: </span><span class="c10">Read about Netstat &nbsp;(you can also
+            search this site for other info ie ipconfig) for Windows here:</span><span class="c10"><a class="c5"
+                href="https://www.google.com/url?q=https://technet.microsoft.com/en-us/library/bb490947.aspx&amp;sa=D&amp;source=editors&amp;ust=1632070098962000&amp;usg=AOvVaw3_ZaNJO_5p7nga7hEsHPXx">&nbsp;</a></span><span
+            class="c13 c10"><a class="c5"
+                href="https://www.google.com/url?q=https://technet.microsoft.com/en-us/library/bb490947.aspx&amp;sa=D&amp;source=editors&amp;ust=1632070098963000&amp;usg=AOvVaw0Ccb9xdQ9bwfK3xir7vw4A">https://technet.microsoft.com/en-us/library/bb490947.aspx</a></span>
+    </p>
+    <p class="c18 c26"><span class="c10 c19">Hint:</span><span class="c10">&nbsp;Mac info is here:</span><span
+            class="c10"><a class="c5"
+                href="https://www.google.com/url?q=https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man3/getifaddrs.3.html&amp;sa=D&amp;source=editors&amp;ust=1632070098963000&amp;usg=AOvVaw18bhhP1X5xfIU9k9KoQ6jt">&nbsp;</a></span><span
+            class="c13 c10"><a class="c5"
+                href="https://www.google.com/url?q=https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man3/getifaddrs.3.html&amp;sa=D&amp;source=editors&amp;ust=1632070098964000&amp;usg=AOvVaw3LTp_rnLujhZYUjSnaHyh7">https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man3/getifaddrs.3.html</a></span>
+    </p>
+    <p class="c18 c26"><span class="c10 c19">Hint: </span><span class="c0">If you are having issues retrieving IPv6 or
+            v4 info from the commands &ndash; look up the options for ipconfig, etc</span></p>
+    <ol class="c1 lst-kix_8pdmiqve1fg7-1 start" start="1">
+        <li class="c6 li-bullet-0"><span class="c10 c19">ipconfig /all &nbsp;</span><span class="c0">(Windows)</span>
+        </li>
+    </ol>
+    <p class="c9"><span class="c10 c19">ifconfig &ndash;a</span><span class="c10">&nbsp;and </span><span
+            class="c10 c19">scutil --dns</span><span class="c10">, and </span><span class="c10 c19">netstat -nr | grep
+            default</span><span class="c0">&nbsp; (Mac)</span></p>
+    <p class="c9"><span class="c8">(Also on Mac &ndash; AppleMenu-&gt;About-&gt;MoreInfo-&gt;System report, ifconfig
+            en1</span><span class="c0">) </span></p>
+    <p class="c9"><span class="c0">(can also type hostname from the command line &ndash;mac/linux)</span></p>
+    <p class="c7 c14"><span class="c0"></span></p>
+    <p class="c9"><span class="c0">For your LAN Ethernet adapter and your general IP configuration:</span></p>
+    <ol class="c1 lst-kix_cwynwjidfuk-2 start" start="1">
+        <li class="c2 li-bullet-0"><span class="c0">What is your hostname?</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c4">palmyra-atoll-89.dynamic2.rpi.edu</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-2" start="2">
+        <li class="c2 li-bullet-0"><span class="c0">What is your MAC address? </span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c4">3c:06:30:0a:9e:eb</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-2" start="3">
+        <li class="c2 li-bullet-0"><span class="c0">Who is the vendor of your Ethernet adapter?</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c4">Apple</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-2" start="4">
+        <li class="c2 li-bullet-0"><span class="c0">What is your IPv4 address?</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c4">129.161.49.99</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-2" start="5">
+        <li class="c2 li-bullet-0"><span class="c0">What is your IPv6 address?</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c4">2620:0:2820:d04:c40:2f89:10bc:d6fd</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-2" start="6">
+        <li class="c2 li-bullet-0"><span class="c0">What are the IP (v4) addresses of your DNS servers?</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c4">128.113.26.250, 128.113.28.68</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-2" start="7">
+        <li class="c2 li-bullet-0"><span class="c10">What is the IP (v4) address of your default gateway<br></span><span
+                class="c4">(1) &nbsp; 129.161.49.99</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-1 start" start="1">
+        <li class="c6 li-bullet-0"><span class="c10 c19">netstat &nbsp;&ndash;f </span><span class="c0">(netstat
+                &ndash;f inet)</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-2 start" start="1">
+        <li class="c2 li-bullet-0"><span class="c0">What kind of transport layer protocols are in use?</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c4">TCP4 and TCP6</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-2" start="2">
+        <li class="c2 li-bullet-0"><span class="c0">What kind of application layer protocols are in use?</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c4">Https</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-1" start="2">
+        <li class="c6 li-bullet-0"><span class="c10 c19">netstat &nbsp;&ndash;b </span><span class="c0">(netstat
+                &ndash;b &ndash;f inet)</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-2 start" start="1">
+        <li class="c2 li-bullet-0"><span class="c0">What applications are using your network ports, and what application
+                layer protocol are they using? (only name up to three) </span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c4">Slack: https</span></li>
+        <li class="c12 li-bullet-0"><span class="c4">Discord: https</span></li>
+        <li class="c12 li-bullet-0"><span class="c4">Mail: POP</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-1" start="3">
+        <li class="c6 li-bullet-0"><span class="c10 c19">nslookup 192.0.32.10<br></span><span class="c0">nslookup it
+                allows you to look up IPs or hostnames against a name server (by default, the first DNS server
+                configured in your network settings).</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-2 start" start="1">
+        <li class="c2 li-bullet-0"><span class="c0">Upon running &ldquo;nslookup 192.0.32.10&rdquo;, what is the host
+                name of the name server you are using</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c4">Unknown</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-2" start="2">
+        <li class="c2 li-bullet-0"><span class="c0">What name is associated with 192.0.32.10? &nbsp;What is the
+                significance of this name? &nbsp;</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c4">ccnso.icann.org, I&rsquo;m not sure on what the significance of the
+                name is because it links to a diplomacy website based out of South America. </span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-2" start="3">
+        <li class="c2 li-bullet-0"><span class="c0">Perform a &ldquo;netstat &ndash;n&rdquo; in your console (this tells
+                netstat not to resolve names against the name server &ndash; notice that it&rsquo;s quicker). &nbsp;Do
+                an nslookup on a foreign IP from your netstat results. &nbsp;What name did you uncover? &nbsp;(If the
+                DNS server can&rsquo;t resolve the IP you picked, try another one.)</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c4">bg-in-f188.1e100.net</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-2" start="4">
+        <li class="c2 li-bullet-0"><span class="c0">Do an &ldquo;nslookup 127.0.0.1&rdquo;. &nbsp;What name is returned?
+                &nbsp;What is the significance of this name?</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c4">Localhost which is because this ip links back to my machine and
+                isn&rsquo;t connect to the internet.</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-2" start="5">
+        <li class="c2 li-bullet-0"><span class="c0">What is the IP address of &nbsp;lms.rpi.edu?</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c4">3.209.112.113, 52.86.218.110, 107.21.43.105, 34.224.139.13</span>
+        </li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-2" start="6">
+        <li class="c2 li-bullet-0"><span class="c0">What is the IP address of www.rpi.edu? Is it IPv4 or IPv6? </span>
+        </li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c4">128.113.0.2, IPv4</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-1" start="4">
+        <li class="c6 li-bullet-0"><span class="c10 c19">tracert &nbsp;www.ucla.edu </span><span class="c0">(traceroute
+                www.ucla.edu)</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-2 start" start="1">
+        <li class="c2 li-bullet-0"><span class="c0">How many hops did it take for you to reach www.ucla.edu?</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c4">14</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-2" start="2">
+        <li class="c2 li-bullet-0"><span class="c10">From the tracert you just ran, locate an IPv4 address of a router
+                along the path. &nbsp;Visit</span><span class="c10"><a class="c5"
+                    href="https://www.google.com/url?q=http://www.iplocation.net/&amp;sa=D&amp;source=editors&amp;ust=1632070098970000&amp;usg=AOvVaw3YDn7GiwdlduYGm4yCxpVJ">&nbsp;</a></span><span
+                class="c13 c10"><a class="c5"
+                    href="https://www.google.com/url?q=http://www.iplocation.net/&amp;sa=D&amp;source=editors&amp;ust=1632070098970000&amp;usg=AOvVaw3YDn7GiwdlduYGm4yCxpVJ">http://www.iplocation.net/</a></span><span
+                class="c0">&nbsp;and enter the IPv4 address. &nbsp;Were you able to determine the router&rsquo;s
+                location? &nbsp;If so, where is it?</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c4">Los Angels (Westwood), California</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-2" start="3">
+        <li class="c2 li-bullet-0"><span class="c0">Enter your own IPv4 address in the website. &nbsp;What did you
+                learn?</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c4">I saw that some API&rsquo;s that they were using picked up my
+                location correctly but there may be another device using the same one in Hartford, CT because 2 of them
+                said I was in Hartford.</span></li>
+    </ol>
+    <ol class="c1 lst-kix_cwynwjidfuk-0 start" start="1">
+        <li class="c3 li-bullet-0"><span class="c16 c10">SSH to RCS-Linux</span></li>
+    </ol>
+    <p class="c17"><span class="c0">For this exercise, you are going to create a terminal session onto another computer
+            and run some network commands there.</span></p>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c27"><span class="c0">Read up on </span></p>
+    <ul class="c1 lst-kix_8avn1jguzp8n-0 start">
+        <li class="c3 li-bullet-0"><span class="c10">SSH:</span><span class="c10"><a class="c5"
+                    href="https://www.google.com/url?q=https://www.ssh.com/ssh/protocol/&amp;sa=D&amp;source=editors&amp;ust=1632070098971000&amp;usg=AOvVaw0UqioL-PFXW_pNGndswHeJ">&nbsp;</a></span><span
+                class="c13 c10"><a class="c5"
+                    href="https://www.google.com/url?q=https://www.ssh.com/ssh/protocol/&amp;sa=D&amp;source=editors&amp;ust=1632070098972000&amp;usg=AOvVaw26gcyBMtntlJNorhrjyPWi">https://www.ssh.com/ssh/protocol/</a></span>
+        </li>
+        <li class="c3 li-bullet-0"><span class="c10">And how to use it on Windows;</span><span class="c10"><a class="c5"
+                    href="https://www.google.com/url?q=https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/ssh-remoting-in-powershell-core?view%3Dpowershell-7&amp;sa=D&amp;source=editors&amp;ust=1632070098972000&amp;usg=AOvVaw3NPJlN1VMzAf7vdfxEvytt">&nbsp;</a></span><span
+                class="c10 c13"><a class="c5"
+                    href="https://www.google.com/url?q=https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/ssh-remoting-in-powershell-core?view%3Dpowershell-7&amp;sa=D&amp;source=editors&amp;ust=1632070098972000&amp;usg=AOvVaw3NPJlN1VMzAf7vdfxEvytt">Here</a></span><span
+                class="c10">&nbsp;or</span><span class="c10"><a class="c5"
+                    href="https://www.google.com/url?q=https://docs.microsoft.com/en-us/windows/terminal/tutorials/ssh&amp;sa=D&amp;source=editors&amp;ust=1632070098973000&amp;usg=AOvVaw3m0wUpwpbpRiiCnsJTf7sS">&nbsp;</a></span><span
+                class="c13 c10"><a class="c5"
+                    href="https://www.google.com/url?q=https://docs.microsoft.com/en-us/windows/terminal/tutorials/ssh&amp;sa=D&amp;source=editors&amp;ust=1632070098973000&amp;usg=AOvVaw3m0wUpwpbpRiiCnsJTf7sS">here</a></span><span
+                class="c0">.</span></li>
+        <li class="c3 li-bullet-0"><span class="c0">On Mac or Unix you can use the normal terminal</span></li>
+    </ul>
+    <p class="c9"><span class="c0">If you are off-campus, you will need the VPN active on your computers; While it
+            should be pre-loaded on your laptops from RPI already, you can find out more about it here</span></p>
+    <p class="c9"><span class="c10 c25"><a class="c5"
+                href="https://www.google.com/url?q=https://itssc.rpi.edu/hc/en-us/articles/360008783172-VPN-Installation-and-Connection&amp;sa=D&amp;source=editors&amp;ust=1632070098974000&amp;usg=AOvVaw25jtw0GjBRe5SQnfytkLkO">https://itssc.rpi.edu/hc/en-us/articles/360008783172-VPN-Installation-and-Connection</a></span>
+    </p>
+    <p class="c7 c26"><span class="c16 c10"></span></p>
+    <p class="c17"><span class="c10">Use SSH to </span><span class="c22 c10">yourRCSid@</span><span
+            class="c10 c19">rcs-linux.rpi.edu </span><span class="c0">(for those on Linux/Unix/OS X, ssh directly from
+            your terminal). Log in with your RCS ID and password. &nbsp;You will arrive in your Rensselaer Computing
+            System (RCS) home directory. &nbsp;</span></p>
+    <p class="c17"><span class="c10">NOTE: If you are off-campus, you must connect to RPI&rsquo;s VPN (Virtual Private
+            Network) to access rcs-linux.rpi.edu. &nbsp;This is accomplished by running a VPN client on your system such
+            as the &ldquo;Cisco AnyConnect VPN client&rdquo; which is likely installed on your laptop already. &nbsp;For
+            instructions on how to get the VPN client and information about VPN access, please see: </span><span
+            class="c10"><a class="c5"
+                href="https://www.google.com/url?q=http://helpdesk.rpi.edu/update.do?artcenterkey%3D556&amp;sa=D&amp;source=editors&amp;ust=1632070098974000&amp;usg=AOvVaw2ERsQP8F1vr5zqDUhfp090">&nbsp;</a></span><span
+            class="c13 c10"><a class="c5"
+                href="https://www.google.com/url?q=http://helpdesk.rpi.edu/update.do?artcenterkey%3D556&amp;sa=D&amp;source=editors&amp;ust=1632070098975000&amp;usg=AOvVaw2r83uZ_jzRRYJvfoc49yjC">http://helpdesk.rpi.edu/update.do?artcenterkey=556</a></span><span
+            class="c0">&nbsp;</span></p>
+    <ol class="c1 lst-kix_266b7znt1amz-1 start" start="1">
+        <li class="c6 li-bullet-0"><span class="c10 c16">netstat -e</span></li>
+    </ol>
+    <ol class="c1 lst-kix_266b7znt1amz-2 start" start="1">
+        <li class="c2 li-bullet-0"><span class="c0">What transport layer protocols do you see in use?</span></li>
+    </ol>
+    <ol class="c1 lst-kix_266b7znt1amz-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c4">TCP</span></li>
+    </ol>
+    <ol class="c1 lst-kix_266b7znt1amz-2" start="2">
+        <li class="c2 li-bullet-0"><span class="c0">What application layer protocols do you see in use?</span></li>
+    </ol>
+    <ol class="c1 lst-kix_266b7znt1amz-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c4">ldaps, ssh, net</span></li>
+    </ol>
+    <ol class="c1 lst-kix_266b7znt1amz-1" start="2">
+        <li class="c6 li-bullet-0"><span class="c16 c10">host www.rpi.edu</span></li>
+    </ol>
+    <ol class="c1 lst-kix_266b7znt1amz-2 start" start="1">
+        <li class="c2 li-bullet-0"><span class="c10">What IPv4 addresses are used by www.rpi.edu?</span><span
+                class="c16 c10">&nbsp;</span></li>
+    </ol>
+    <ol class="c1 lst-kix_266b7znt1amz-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c4">128.113.0.2</span></li>
+    </ol>
+    <ol class="c1 lst-kix_266b7znt1amz-1" start="3">
+        <li class="c6 li-bullet-0"><span class="c16 c10">traceroute www.google.com</span></li>
+    </ol>
+    <ol class="c1 lst-kix_266b7znt1amz-2 start" start="1">
+        <li class="c2 li-bullet-0"><span class="c0">How many hops did it take to get to Google? &nbsp;</span></li>
+    </ol>
+    <ol class="c1 lst-kix_266b7znt1amz-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c4">9</span></li>
+    </ol>
+    <ol class="c1 lst-kix_266b7znt1amz-1" start="4">
+        <li class="c6 li-bullet-0"><span class="c10">In your Windows Command Prompt console use netstat (as in section
+                1.b) to find your current SSH connection. &nbsp; Mac users : Use command </span><span
+                class="c10 c19">who -a</span><span class="c10">&nbsp;as well as </span><span
+                class="c10 c19">netstat</span><span class="c0">&nbsp;</span></li>
+    </ol>
+    <p class="c9"><span class="c0">Copy the netstat line showing the SSH connection to here. </span></p>
+    <p class="c9"><span class="c10 c19 c15 c24">tcp &nbsp; &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp;0
+            rmtacc-r7a.rcs.rpi.:ssh gilead.netel.rpi.:62036 ESTABLISHED</span></p>
+    <p class="c7 c14"><span class="c0"></span></p>
+    <ol class="c1 lst-kix_29acvqehvf2t-0 start" start="1">
+        <li class="c3 li-bullet-0"><span class="c10 c19">Overriding
+                DNS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br></span><span class="c10">Your machine has a local
+                &ldquo;hosts&rdquo; file that maps IP addresses to host names and can be used to override DNS. &nbsp;(On
+                some browsers, esp Chrome &ndash; the DNS information can be cached. &nbsp;Before and after this
+                exercise, you should go into your browser&rsquo;s settings and empty your cache.) </span><span
+                class="c4">My firewall that I have set up does not let me change my DNS so I had to use the data that my
+                group member, Eric, got while doing it.</span></li>
+    </ol>
+    <ol class="c1 lst-kix_29acvqehvf2t-1 start" start="1">
+        <li class="c6 li-bullet-0"><span class="c10">Use jEdit, notepad or some other text editor to edit your hosts
+                file: C:\Windows\System32\drivers\etc\hosts (/etc/hosts on linux/unix). &nbsp;Using the examples in the
+                comments at the top of the hosts file as a guide, give www.rpi.edu a new host name &ndash; you can use
+                any IP address of www.rpi.edu</span><span class="c10 c19">&nbsp;</span><span class="c0">for this
+                exercise (you need only one IP).</span></li>
+        <li class="c6 li-bullet-0"><span class="c0">Visit the new hostname in your browser and capture a screenshot of
+                the browser window. (CTRL-SHIFT-ALT PrntScrn) &nbsp;</span></li>
+        <li class="c6 li-bullet-0"><span class="c0">Paste the screenshot here. </span></li>
+    </ol>
+    <p class="c7"><span class="c0"></span></p>
+    <ol class="c1 lst-kix_4w3azdvewbjj-1 start" start="1">
+        <li class="c6 li-bullet-0"><span class="c0">(I&rsquo;d encourage you to now return your hosts file to its
+                original state. Then clear your Browser&rsquo;s cache).)</span></li>
+    </ol>
+    <ol class="c1 lst-kix_4w3azdvewbjj-0 start" start="1">
+        <li class="c3 li-bullet-0"><span class="c0">Do one of the following &ndash; or both if you&rsquo;re
+                bored.</span></li>
+    </ol>
+    <ol class="c1 lst-kix_4w3azdvewbjj-1 start" start="1">
+        <li class="c6 li-bullet-0"><span class="c10 c19">(OPTION A &ndash; For those who are like &ndash; &ldquo;I love
+                this networking stuff&rdquo;) Take a look at some packets<br></span><span class="c10">Download and
+                install WireShark:</span><span class="c10"><a class="c5"
+                    href="https://www.google.com/url?q=http://www.wireshark.org/download.html&amp;sa=D&amp;source=editors&amp;ust=1632070098978000&amp;usg=AOvVaw3HUS4ul-r5MM9hAxmSt2xq">&nbsp;</a></span><span
+                class="c13 c10"><a class="c5"
+                    href="https://www.google.com/url?q=http://www.wireshark.org/download.html&amp;sa=D&amp;source=editors&amp;ust=1632070098979000&amp;usg=AOvVaw1CkHqRfZWEeyV8U7rHpgKl">http://www.wireshark.org/download.html<br></a></span><span
+                class="c10">There are ports of this for most OSes &ndash; if you&rsquo;re not running Windows or Mac,
+                scroll down on the Download page and look to the right. &nbsp;</span><span class="c22 c10 c31">(Note: I
+                encourage you to run this only against your own machines. Also note that activities such as port
+                scanning against RPI network devices will be noticed&hellip;)</span></li>
+    </ol>
+    <ol class="c1 lst-kix_4w3azdvewbjj-2 start" start="1">
+        <li class="c2 li-bullet-0"><span class="c0">Run WireShark and select &ldquo;Capture Options, start a capture
+                with detailed options&rdquo;.</span></li>
+    </ol>
+    <ol class="c1 lst-kix_4w3azdvewbjj-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c0">Set the Capture Filter to &ldquo;tcp port 80&rdquo; &nbsp;(or
+                &ldquo;tcp port http&rdquo;)</span></li>
+        <li class="c12 li-bullet-0"><span class="c10">Set &ldquo;Stop Capture after </span><span
+                class="c10 c19">4</span><span class="c0">&nbsp;packets&rdquo;</span></li>
+        <li class="c12 li-bullet-0"><span class="c0">Click &ldquo;start&rdquo;</span></li>
+    </ol>
+    <ol class="c1 lst-kix_4w3azdvewbjj-2" start="2">
+        <li class="c2 li-bullet-0"><span class="c10">In your browser, visit</span><span class="c10"><a class="c5"
+                    href="https://www.google.com/url?q=http://rpi.edu/&amp;sa=D&amp;source=editors&amp;ust=1632070098980000&amp;usg=AOvVaw3L2ZwPYile4qk6K7E-Q6z2">&nbsp;</a></span><span
+                class="c13 c10"><a class="c5"
+                    href="https://www.google.com/url?q=http://rpi.edu/&amp;sa=D&amp;source=editors&amp;ust=1632070098980000&amp;usg=AOvVaw3L2ZwPYile4qk6K7E-Q6z2">http://rpi.edu/</a></span>
+        </li>
+    </ol>
+    <ol class="c1 lst-kix_4w3azdvewbjj-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c0">Looking back at the WireShark output, look for the TCP three-way
+                handshake. &nbsp;</span></li>
+    </ol>
+    <ol class="c1 lst-kix_4w3azdvewbjj-2" start="3">
+        <li class="c2 li-bullet-0"><span class="c10">How are the SYN and ACK flags represented in the TCP header?
+                &nbsp;(Feel free to investigate</span><span class="c10"><a class="c5"
+                    href="https://www.google.com/url?q=http://en.wikipedia.org/wiki/Transmission_Control_Protocol&amp;sa=D&amp;source=editors&amp;ust=1632070098981000&amp;usg=AOvVaw1QDY4kWOyyKYnkaqkLivd1">&nbsp;</a></span><span
+                class="c13 c10"><a class="c5"
+                    href="https://www.google.com/url?q=http://en.wikipedia.org/wiki/Transmission_Control_Protocol&amp;sa=D&amp;source=editors&amp;ust=1632070098981000&amp;usg=AOvVaw1QDY4kWOyyKYnkaqkLivd1">http://en.wikipedia.org/wiki/Transmission_Control_Protocol</a></span><span
+                class="c0">&nbsp;as well.)</span></li>
+    </ol>
+    <ol class="c1 lst-kix_4w3azdvewbjj-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c4">The SYN comes up after the request to the get port is called and
+                the ACK flag appears after they are accepted and the connection is created.</span></li>
+    </ol>
+    <ol class="c1 lst-kix_4w3azdvewbjj-2" start="4">
+        <li class="c2 li-bullet-0"><span class="c0">Look at the HTTP Request header. &nbsp;Copy your user-agent here
+                (right-click to copy).</span></li>
+    </ol>
+    <ol class="c1 lst-kix_4w3azdvewbjj-3 start" start="1">
+        <li class="c12 li-bullet-0"><span class="c10 c15">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6)
+                AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36</span></li>
+    </ol>
+    <footer>
+        <div class="footer">
+            <a class = footerlist href="/Home/index.html"> Home</a>
+            <a class = footerlist href="/Final_Project/index.html"> Final Project</a>
+            <a class = footerlist href="/Resume/index.html"> Resume</a>
+            <a class = footerlist href="/Labs/"> Labs</a>
+          <a href="https://www.linkedin.com/in/anooj-pai-abb3bb163" target="_blank">
+          <img class="linkedin" src="/Assets/linkedin_logo.png" alt="Linkedin Logo" height="30" width="30"/>
+          </a>
+        </div>
+      </footer>
+</body>
+</html>

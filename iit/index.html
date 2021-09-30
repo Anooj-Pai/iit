@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="/CSS/intro.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Hello</h1>
+    </div>
+    <div class="welcome-section content-hidden">
+       <div class="content-wrap">
+          <ul class="fly-in-text">
+              <li>W</li>
+              <li>E</li>
+              <li>L</li>
+              <li>C</li>
+              <li>O</li>
+              <li>M</li>
+              <li>E</li>
+          </ul>
+          <a href="/Home/index.html" class="enter-button">Home</a>
+          <a href="/Labs/Lab1/" class="enter-button">Labs</a>
+          <a href="/Final_Project/index.html" class="enter-button">Final Project</a>
+          <a href="/Resume/index.html" class="enter-button">Resume</a>
+       </div>
+    </div>
+    <script type="text/javascript">
+    $(function(){
+        var welcomeSection = $('.welcome-section'),
+            enterButton = welcomeSection.find('.enter-button');
+
+            setTimeout(function(){
+                welcomeSection.removeClass('content-hidden')
+            },800);
+
+            enterButton.on('click', function(e) {
+                welcomeSection.addClass('content-hidden').fadeOut();
+            });
+    });
+    </script>
+</body>
+</html>

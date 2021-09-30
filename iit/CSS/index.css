@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.mainhead {
+  text-align: right;
+  background-color: rgb(55, 63, 68);
+  color: white;
+  padding-right: 20px;
+  font-family:cursive;
+  font-size: 25px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(55, 63, 68);
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(0, 0, 0);
+}
+
+.topnav a.active{
+  background-color: #075777;
+  color: white;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn{
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropbtnlab {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 15px 16px;
+  background-color: #075777;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.lab3 {
+  text-align: center;
+  font-family: cursive;
+}
+.fp {
+    text-align: center;
+    font-family: cursive;
+}
+.footer{
+  background-color: rgb(55, 63, 68);
+  color: white;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.linkedin {
+  filter: invert(1);
+  padding: 0px;
+  margin: 0px;
+  padding-bottom: 10px;
+  display: block;
+  margin-left: 49%;
+  
+}
+.footerlist {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+}
+.labbox{
+  display: inline-grid;
+  margin-top: 10px;
+  width: 200px;
+  border-style: solid;
+  border-color: #075777;
+}
+.labcap{
+  text-align: center;
+  display: inline-grid;
+  text-decoration: none;
+  margin-top: 0px;
+  width: 196px;
+  border-top: 0px;
+}
+p {
+  text-decoration: none;
+  color: rgb(55, 63, 68);
+  font-style: italic;
+  padding: 2px;
+  margin-top: 0px;
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  margin-left: 23%;
+  margin-right: 23%;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  width: 200px;
+  font-size:medium;
+}
+.aboutme {
+  text-align: center;
+}
+.me {
+  width: 15%;
+  height: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7px;
+  border-radius: 50%;
+}
+.mebio {
+  margin-left: 30%;
+  margin-right: 30%;
+}
