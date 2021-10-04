@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+	<title>Portfolio Feed</title>
+	<description>What You Can Expect To See in the Future</description>
+	<link>http://www.example.com/</link>
+	<lastBuildDate>Thu, 30 Sep 2021 08:00:00 EST</lastBuildDate>
+	<pubDate>Thu, 30 Sep 2021 08:15:00 EST</pubDate>
+	<item>
+		<title>Doctor uses iPhone 13 Pro camera to take macro images of patient's eyes</title>
+		<description>A San Diego area doctor has discovered that the macro mode on Apple's new iPhone 13 Pro models could be useful in the monitoring and treatment of eye conditions.</description>
+		<link>https://appleinsider.com/articles/21/09/30/doctor-uses-iphone-13-pro-camera-to-take-macro-images-of-patients-eyes</link>
+		<guid>https://appleinsider.com/articles/21/09/30/doctor-uses-iphone-13-pro-camera-to-take-macro-images-of-patients-eyes</guid>
+	  <pubDate>Thu, 30 Sep 2021 08:30:00 EST</pubDate>
+	</item>
+	<item>
+		<title>Amazon Astro home robot: How to preorder Amazon's $1,000 Alexa bot and all its new gear</title>
+		<description>Some of Amazon's newest devices aren't as easy to get as others. Here's everything you need to know about when and how to get your hands on the new Astro, flying Always Home drone, smart thermostat and more.</description>
+		<link>https://www.cnet.com/home/amazon-astro-home-robot-how-to-preorder-amazons-1000-alexa-bot-and-all-its-new-gear/</link>
+		<guid>https://www.cnet.com/home/amazon-astro-home-robot-how-to-preorder-amazons-1000-alexa-bot-and-all-its-new-gear/</guid>
+	  <pubDate>Thu, 30 Sep 2021 09:00:00 EST</pubDate>
+	</item>
+	<item>
+		<title>Apple’s big iPhone update lets you FaceTime with Windows and Android users — here’s how</title>
+		<description>Apple’s big iOS 15 update for iPhones lets you invite Windows and Android users into your FaceTime calls</description>
+		<link>https://www.cnbc.com/2021/09/30/apple-ios-15-how-to-facetime-with-windows-and-android-users.html</link>
+		<guid>https://www.cnbc.com/2021/09/30/apple-ios-15-how-to-facetime-with-windows-and-android-users.html</guid>
+	  <pubDate>Thu, 30 Sep 2021 09:15:00 EST</pubDate>
+	</item>
+	<item>
+		<title>Fairphone 4 has an incredible 5-year warranty, aims for 6 years of updates</title>
+		<description>If you want a smartphone with a long life, Fairphone is leading the industry.</description>
+		<link>https://arstechnica.com/gadgets/2021/09/fairphone-4-has-an-incredible-5-year-warranty-aims-for-6-years-of-updates/</link>
+		<guid>https://arstechnica.com/gadgets/2021/09/fairphone-4-has-an-incredible-5-year-warranty-aims-for-6-years-of-updates/</guid>
+	  <pubDate>Thu, 30 Sep 2021 09:30:00 EST</pubDate>
+	</item>
+	<item>
+		<title>Some Samsung phones can now be used as a car key, but support is limited</title>
+		<description>Samsung has started rolling out the Digital Key feature with the latest update for the Galaxy S21+, Galaxy S21 Ultra, Galaxy Z Fold 3, Galaxy Z Flip 3, and the Galaxy Note 20 Ultra.</description>
+		<link>https://www.xda-developers.com/some-samsung-phones-used-car-key-support-limited/</link>
+		<guid>https://www.xda-developers.com/some-samsung-phones-used-car-key-support-limited/</guid>
+	  <pubDate>Thu, 30 Sep 2021 09:45:00 EST</pubDate>
+	</item>
+ 
+</channel>
+</rss>
+
