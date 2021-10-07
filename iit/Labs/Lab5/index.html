@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Lab 5</title>    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>    
+    <link href="../../CSS/lab5.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="lab5.js"></script>
+  </head>
+  <body>
+    <div class="all">
+      <div class="topnav">
+        <h1 class="mainhead">Anooj Pai Portfolio</h1>
+        <a href="../../Home/index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtnlab">Labs</button>
+          <div class="dropdown-content">
+            <a href="../../Labs/Lab1/index.html">Lab 1: Protocols</a>
+            <a href="../../Labs/Lab2/index.html">Lab 2: Resume</a>
+            <a href="../../Labs/Lab3/index.html">Lab 3: Website</a>
+            <a href="../../Labs/Lab4-atom/Atomfeed.xml">Lab 4: Atom Feed</a>
+            <a href="../../Labs/Lab4-rss/RSSfeed.xml">Lab 4: RSS Feed</a>
+            <a href="../../Labs/Lab5/index.html">Lab 5: JS Form</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Quizzes</button>
+          <div class="dropdown-content">
+            <a href="../../Quizzes/f21Quiz1/paia2F21Quiz1.html">Quiz 1</a>
+          </div>
+        </div>
+        <a href="../../Final_Project/index.html">Final Project</a>
+        <a href="../../Resume/index.html">Resume</a>
+      </div>
+    </div>
+    <div id="bodyBlock">
+      <h1>Intro to IT - Lab 5</h1>
+      <h1>Anooj Pai</h1>
+      <form id="addForm" name="addForm" action="#" method="post" onsubmit="return validate(this);">
+        <fieldset> 
+          <legend>Contact Information</legend>
+          <div class="formData">
+                          
+            <label class="field" for="firstName">First Name:</label>
+            <div class="value"><input type="text" size="60" value="" name="firstName" id="firstName"/></div>
+            
+            <label class="field" for="lastName">Last Name:</label>
+            <div class="value"><input type="text" size="60" value="" name="lastName" id="lastName"/></div>
+            
+            <label class="field" for="title">Title:</label>
+            <div class="value"><input type="text" size="60" value="" name="title" id="title"/></div>
+            
+            <label class="field" for="org">Organization:</label>
+            <div class="value"><input type="text" size="60" value="" name="org" id="org"/></div>
+            
+            <label class="field" for="pseudonym">Nickname:</label>
+            <div class="value"><input type="text" size="60" value="" name="pseudonym" id="pseudonym"/></div>
+            
+            <label class="field" for="comments">Comments:</label>
+            <div class="value"><textarea onclick="clearContents(this);" rows="4" cols="40" name="comments" id="comments">Please enter your comments</textarea></div>
+          
+            <input type="submit" value="save" id="save" name="save"/>
+          </div>
+        </fieldset>
+      </form>
+      <button onclick="namealt()">Contact Information</button>
+    </div>
+    <footer>
+      <div class="footer">
+          <a class = footerlist href="../../Home/index.html"> Home</a>
+          <a class = footerlist href="../../Final_Project/index.html"> Final Project</a>
+          <a class = footerlist href="../../Resume/index.html"> Resume</a>
+          <a class = footerlist href="../../Labs/"> Labs</a>
+        <a href="https://www.linkedin.com/in/anooj-pai-abb3bb163" target="_blank">
+        <img class="linkedin" src="../../Assets/linkedin_logo.png" alt="Linkedin Logo" height="30" width="30">
+        </a>
+      </div>
+      </footer>
+  </body>
+</html>
