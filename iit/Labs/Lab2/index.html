@@ -134,11 +134,62 @@
       background-color: #075777;
       color: white;
     }
+
+    #modal {
+      border: 1px solid #333;
+      background: #6479fd;
+    }
+
+    .button:hover {
+      background: #a4a9fd;
+    }
+
+    .dialog {
+      border: 5px solid #666;
+      padding: 10px;
+      background: #3A3A3A;
+      position: absolute;
+      display: none;
+    }
+
+    .dialog label {
+      display: inline-block;
+      color: #cecece;
+    }
+
+    input[type=text] {
+      border: 1px solid #333;
+      display: inline-block;
+      margin: 5px;
+    }
+
+    #btnOK {
+      border: 1px solid #000;
+      background: #ff9999;
+      margin: 5px;
+    }
+
+    #btnOK:hover {
+      border: 1px solid #000;
+      background: #ffacac;
+    }
   </style>
   <link rel="stylesheet" href="../../CSS/index.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $("#dialog").dialog();
+    });
+  </script>
 </head>
 
 <body>
+  <div id="dialog" title="Basic dialog">
+    <p>In Lab 2 we created a resume for ourselved in HTML.</p>
+  </div>
+  
   <div class="all">
     <div class="topnav">
       <h1 class="mainhead">Anooj Pai Portfolio</h1>
@@ -183,18 +234,21 @@
   <h2>EXPERIENCE</h2>
   <h4><strong>Door Drop</strong></h4>
   <h5>Apr 2020 – Aug 2021</h5>
-  <p class="expdetails">Built website utilizing JavaScript that allows users to place orders for contact-free delivery.
+  <p class="expdetails">Built website utilizing JavaScript that allows users to place orders for contact-free
+    delivery.
     Developed a back-
     end database using PHP and Firebase to store and organize orders.</p>
   <h4 class="masks"><strong>3D Printed Face Masks</strong></h4>
   <h5 class="masks">Apr 2020 – Aug 2020</h5>
-  <p class="expdetails">Designed and 3D printed a face mask with replaceable filters. Donated them o family and friends
+  <p class="expdetails">Designed and 3D printed a face mask with replaceable filters. Donated them o family and
+    friends
     free of cost
     during the COVID-19 pandemic.</p>
   <h4 class="masks"><strong>Jet Turbine, Ridge High School</strong></h4>
   <h5 class="masks">Apr 2019 – Feb 2020</h5>
   <p class="expdetails">Designed and built a fully functioning prototype of a turbine in CAD. First model was built
-    using scrap metal, cans and a spot welder. Resolved problems and redesigned the next version using better hardware.
+    using scrap metal, cans and a spot welder. Resolved problems and redesigned the next version using better
+    hardware.
     Worked on the
     blades and fuel combustion modules.</p>
   <h4 class="masks"><strong>Encryption Algorithm</strong></h4>
@@ -221,14 +275,15 @@
   </ul>
   <footer>
     <div class="footer">
-        <a class = footerlist href="../../Home/index.html"> Home</a>
-        <a class = footerlist href="../../Final_Project/index.html"> Final Project</a>
-        <a class = footerlist href="../../Resume/index.html"> Resume</a>
-        <a class = footerlist href="../../Labs/"> Labs</a>
+      <a class=footerlist href="../../Home/index.html"> Home</a>
+      <a class=footerlist href="../../Final_Project/index.html"> Final Project</a>
+      <a class=footerlist href="../../Resume/index.html"> Resume</a>
+      <a class=footerlist href="../../Labs/"> Labs</a>
       <a href="https://www.linkedin.com/in/anooj-pai-abb3bb163" target="_blank">
-      <img class="linkedin" src="../../Assets/linkedin_logo.png" alt="Linkedin Logo" height="30" width="30">
+        <img class="linkedin" src="../../Assets/linkedin_logo.png" alt="Linkedin Logo" height="30" width="30">
       </a>
     </div>
   </footer>
 </body>
+
 </html>

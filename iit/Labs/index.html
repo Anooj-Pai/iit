@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Final Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="../Home/LabMenu.js"></script>
+    <script src="../Home/widgetMenu.js"></script>
+    <script>
+        $(function () {
+            $("#accordion").accordion();
+        });
+    </script>
+    <style>
+        .ui-menu {
+            width: 80%;
+            font-size: 20px;
+            min-height: 30px;
+            text-align: center;
+            padding-left: 10%;
+        }
+
+        ul#menu {
+            width: 100%;
+        }
+
+        ul#menu>li {
+            width: 200px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="mainhead">Anooj Pai Portfolio</h1>
+    <div>
+        <ul id="menu">
+            <li><a href="../Home/index.html">Home</a></li>
+            <li><a href="#">Labs</a>
+                <ul id="labs"></ul>
+            </li>
+            <li><a href="#">Quizzes</a>
+                <ul>
+                    <li><a href="../Quizzes/f21Quiz1/paia2F21Quiz1.html">Quiz 1</a></li>
+                    <li><a href="#">Quiz 2</a></li>
+                </ul>
+            </li>
+            <li><a href="../Final_Project/index.html">Final Project</a></li>
+            <li><a href="../Resume/index.html">Resume</a></li>
+        </ul>
+    </div>
+    </div>
+    <div id="accordion">
+        <h3>Lab 2</h3>
+        <div>
+            <p>
+                In Lab 2 we created a <a href="../Resume/index.html">resume</a> for ourselved in HTML.
+            </p>
+        </div>
+        <h3>Lab 3</h3>
+        <div>
+            <p>
+                In Lab 3 we created the <a href="../Home/index.html">site</a> you are on right now.
+            </p>
+        </div>
+        <h3>Lab 4</h3>
+        <div>
+            <p>
+                In Lab 4 we created some sample RSS and Atom feeds that are linked below.
+            </p>
+            <ul>
+                <li><a href = "/Labs/Lab4-atom/Atomfeed.xml">Atom</a></li>
+                <li><a href = "/Labs/Lab4-rss/RSSfeed.xml">RSS</a></li>
+            </ul>
+        </div>
+        <h3>Lab 5</h3>
+        <div>
+            <p>
+                In lab 5 we started to use JS and created a simple <a href="../Labs/Lab5/index.html">form</a>.
+            </p>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <a class=footerlist href="../Home/index.html"> Home</a>
+            <a class=footerlist href="../Final_Project/index.html"> Final Project</a>
+            <a class=footerlist href="../Resume/index.html"> Resume</a>
+            <a class=footerlist href="../Labs/"> Labs</a>
+            <a href="https://www.linkedin.com/in/anooj-pai-abb3bb163" target="_blank">
+                <img class="linkedin" src="../Assets/linkedin_logo.png" alt="Linkedin Logo" height="30" width="30">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
